@@ -1,16 +1,104 @@
-# React + Vite
+# 🚀 Invoice Extraction AI - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Overview
+This is the frontend application for the Invoice Extraction AI system. It allows users to upload invoice files (JPG, PNG, PDF), view extracted data, and analyze invoice insights through a dashboard.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Tech Stack
+- React.js
+- Axios
+- Tailwind CSS / CSS Modules
+- Chart.js / Recharts (for analytics)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
+- 📤 Upload single or multiple invoice files
+- 📄 Preview uploaded invoices
+- 📊 Dashboard with analytics:
+  - Total spend by vendor
+  - Monthly spend trends
+  - Invoice count
+  - Currency-wise totals
+- 🔍 View extracted structured invoice data
+- ⚠️ Error handling for failed uploads
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Project Structure
+```
+src/
+ ├── components/
+ ├── pages/
+ ├── services/
+ ├── utils/
+ └── App.js
+```
+
+---
+
+## ⚙️ Setup Instructions
+
+1. Clone the repository
+```bash
+git clone <repo-url>
+cd frontend
+```
+
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Start development server
+```bash
+npm start
+```
+
+---
+
+## 🔌 API Integration
+Frontend communicates with backend APIs for:
+- File upload
+- Fetching extracted invoice data
+- Fetching analytics
+
+Example:
+```js
+POST /upload
+GET /invoices
+GET /analytics
+```
+
+---
+
+## 🧠 Key Design Decisions
+- Component-based architecture for reusability
+- Separate service layer for API calls
+- Responsive UI for better UX
+
+---
+
+## ⚠️ Assumptions & Limitations
+- Backend handles all AI/ML processing
+- Limited validation on frontend
+- UI optimized for modern browsers only
+
+---
+
+## 🚀 Future Improvements
+- Drag & drop file upload
+- Better error visualization
+- Real-time processing updates
+- Authentication system
+
+---
+
+## 📸 Demo
+Include screenshots or demo video link here.
+
+---
+
+## 👨‍💻 Author
+Developed as part of assignment submission.
